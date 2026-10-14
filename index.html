@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>EXPENSE TRACKER APPLICATION</h1>
+
+      <form id="formm">
+        <h2>My Expenses</h2>
+
+        <div class="form-row">
+          <label for="title">Title</label>
+          <input id="title" type="text" />
+        </div>
+        <div class="form-row">
+          <label for="amount">Amount</label>
+          <input id="amount" type="text" />
+        </div>
+
+        <div class="form-row">
+          <label for="Categories">Category</label>
+          <select id="Categories">
+            <option value="Entertainment">Entertainment</option>
+            <option value="Transport">Transport</option>
+            <option value="Travel">Travel</option>
+            <option value="Medical">Medical</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Grocery">Grocery</option>
+          </select>
+        </div>
+        <div class="button-group">
+          <button id="add-btn" type="submit">Add to Expense</button>
+
+          <button type="button" id="updatebtn">Update</button>
+          <button id="cancell" type="button">Cancel</button>
+        </div>
+      </form>
+      <br />
+
+      <div class="controls">
+        <div class="control-row">
+          <label for="filterCategory">Filter by Category</label>
+
+          <select id="filterCategory">
+            <option value="ALL">All</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Transport">Transport</option>
+            <option value="Travel">Travel</option>
+            <option value="Medical">Medical</option>
+            <option value="ELECTRONICS">Electronics</option>
+            <option value="Grocery">Grocery</option>
+          </select>
+        </div>
+
+        <div class="control-row">
+          <label for="sortbyAmount">Sort by Amount</label>
+          <select name="sortbyAmount" id="sortbyAmount">
+            <option value="NONE">NONE</option>
+            <option value="LOW_HIGH">LOW->HIGH</option>
+            <option value="HIGH_LOW">HIGH->LOW</option>
+          </select>
+        </div>
+
+        <div class="control-row">
+          <label for="search">Search Expenses</label>
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by expense title"
+          />
+        </div>
+      </div>
+
+      <div id="expense-container"></div>
+      <br />
+      <p id="error"></p>
+      <br />
+      <div class="expense-summary">
+        <div class="summary-item">
+          <p class="summary-label">Overall Expenses</p>
+          <p id="overall" class="summary-value"></p>
+        </div>
+
+        <div class="summary-item">
+          <p class="summary-label">Filtered Amount</p>
+          <p id="total-expenses" class="summary-value"></p>
+        </div>
+      </div>
+ 
+    </main>
+    <script src="/Backend/scriptt.js"></script>
+  </body>
+</html>

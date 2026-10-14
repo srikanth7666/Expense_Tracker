@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+   background-color: #f5f5f5;
+}
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#formm {
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+.form-row label {
+  width: 60px;
+}
+.form-row input,
+.form-row select {
+  flex: 1;
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+.button-group button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#add-btn {
+  background-color: #2563eb;
+  color: white;
+}
+#updatebtn {
+  background-color: #16a34a;
+  color: white;
+}
+#cancell {
+  background-color: #dc2626;
+  color: white;
+}
+#add-btn:hover {
+  background-color: #1d4ed8;
+}
+#updatebtn:hover {
+  background-color: #15803d;
+}
+
+#cancell:hover {
+  background-color: #b91c1c;
+}
+.expense-card {
+  
+  padding: 25px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.Expense-actions{
+  display: flex;
+  gap: 10px;
+}
+.Expense-info h3{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Expense-info p{
+   margin: 0;
+
+}
+.Expense-actions button{
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.Expense-actions button:first-child{  
+   background-color: #dc2626;
+   color: white;
+}
+.Expense-actions button:last-child{
+   background-color: purple;
+   color: white;
+}
+.Expense-actions button:first-child:hover{
+  background-color: #b91c1c;
+}
+.Expense-actions button:last-child:hover{
+  background-color: #374151;
+}
+.Expense-info{
+  flex: 1;
+   display: flex;
+  flex-direction: column;
+    gap: 8px;
+  
+}
+.control-row{
+  padding: 10px;
+  display: flex;
+  
+  align-items: center;
+  gap: 15px;
+}
+.control-row label{
+  width: 140px;
+}
+.control-row:last-child{
+  margin-bottom: 0;
+}
+.control-row select,
+.control-row input{
+  flex:1;
+}
+.expense-summary {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.summary-label{
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.summary-value {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+#formm h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+.form-row input:focus,
+.form-row select:focus,
+.control-row input:focus,
+.control-row select:focus{
+  outline: none;
+  border-color: #2563eb;
+}
+.controls{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.expense-amount{
+  margin:0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.expense-category{
+    margin:0;
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+@media (max-width:320px){
+  .Expense-actions button{
+    padding: 6px 8px;
+    font-size:12px
+  }
+}
+
+
+@media (max-width: 200px) {
+    .expense-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
